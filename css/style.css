@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* ================= GLOBAL BACKGROUND ================= */
+  body {
+    background: linear-gradient(135deg, #0a1a2f, #000000);
+    color: white;
+  }
+  
+  /* ================= HERO ================= */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0a1a2f, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #dddddd;
+  }
+  
+  /* ================= DISCOVER BUTTON ================= */
+  .btn {
+    margin-top: 25px;
+    padding: 12px 32px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* ================= TOP BAR ================= */
+  .top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 26, 47, 0.95);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(6px);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  
+  /* ================= INFO SECTION ================= */
+  .info-section {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .why,
+  .how {
+    width: 50%;
+    padding: 80px 60px;
+  }
+  
+  .why h2,
+  .how h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .why h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+  
+  .why p,
+  .how ol {
+    font-size: 1.2rem;
+    color: #dddddd;
+  }
+  
+  .how ol {
+    line-height: 2.4rem;
+  }
+  
+  /* ================= ABOUT PAGE ================= */
+  .about-split {
+    display: flex; /* LEM and DEV side by side */
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 80px 40px;
+    gap: 40px;
+    flex-wrap: wrap; /* responsive stacking */
+  }
+  
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 450px;
+  }
+  
+  .about-card h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+  }
+  
+  .fixed-img {
+    width: 220px;  /* fixed 2x2 size */
+    height: 220px; /* fixed 2x2 size */
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* about description */
+  .about-desc {
+    max-width: 420px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #dddddd;
+  }
+  
+  /* ================= PROJECTS ================= */
+  .project-section {
+    min-height: 100vh;
+    padding: 120px 80px;
+    text-align: center;
+  }
+  
+  .project-section h1 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+  }
+  
+  .project-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .project-content img {
+    max-width: 550px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+  }
+  
+  .desc-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .project-desc {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #dddddd;
+  }
+  
+  /* ================= FOOTER ================= */
+  footer {
+    background: #000;
+    color: #dddddd;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 900px) {
+    .about-split {
+      flex-direction: column; /* stack cards on smaller screens */
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .info-section {
+      flex-direction: column;
+    }
+  
+    .why,
+    .how {
+      width: 100%;
+      padding: 60px 40px;
+    }
+  
+    .project-section {
+      padding: 80px 40px;
+    }
+  }
+  
