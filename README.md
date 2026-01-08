@@ -35,12 +35,3 @@ All changes follow this **strict workflow**:
 - Every change must go through a PR  
 - Both partners review each other’s PRs
 
----
-
-## 📂 Local Setup
-
-To run this website locally:
-
-1. Clone the repository:
-```bash
-git clone https://github.com/devruthtadeo/cpe411l-pair-website.git
